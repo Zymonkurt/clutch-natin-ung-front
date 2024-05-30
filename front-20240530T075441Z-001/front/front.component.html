@@ -1,0 +1,70 @@
+<body>
+    <section>
+      <div class="profile">
+        <img id="profilePic" src="./assets/profile.png" alt="Profile Picture">
+        <input type="file" id="fileInput" accept="image/*">
+      </div>
+      <div class="cert">
+        <div class="cert_name">
+          <div class="cert_block">
+            <div class="cert_id">
+              <div class="image-container">
+                <input type="file" id="certificateImage" accept="image/*" (change)="loadImage($event)">
+                <label for="certificateImage"></label>
+              </div>
+            </div>  
+          </div>  
+        </div>  
+      </div>
+      
+      <!--Calendar-->
+      
+      <div class="calendar">
+        <div class="button-container">
+          <div class="nextbutton">
+            <button class="prevMonth" (click)="prevMonth()">&lt;</button>
+            <h2 class="monthYear"></h2>
+            <button class="nextMonth" (click)="nextMonth()">></button>
+          </div>
+        </div>
+        <table class="calendar">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody class="calendarBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- information summary -->
+
+  <div class="info">
+    <div class="info_pic">
+      <img id="profilePic" src="./assets/profile.png" alt="Info Profile Picture">
+      <span class="add-icon">+</span>
+    </div>
+    <div class="certificates">
+
+    </div>
+  </div>
+
+    <!-- profile about -->
+
+    <div class="about">
+
+    </div>
+  
+
+  <div class="footer">
+
+  </div>
+
+</body>

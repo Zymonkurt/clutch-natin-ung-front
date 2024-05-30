@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: Montserrat;
+  }
+  
+  /* Logo and exit button styles */
+  .logo {
+    position: relative;
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 20px auto 50px;
+    border-radius: 15px;
+  }
+  
+  .exit {
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 130px auto 0;
+    filter: invert(100%) sepia(3%) saturate(7481%) hue-rotate(247deg) brightness(114%) contrast(93%);
+  }
+  
+  /* Header styles */
+  header {
+    position: fixed;
+    background-color: #FF7001;
+    height: 100%;
+    width: 150px;
+  }
+  
+  header ul { 
+    list-style: none;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  header li {
+    margin-bottom: 15px;
+  }
+  
+  header li a {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+  }
+  
+  header li:hover,
+  header li a.router-link-active {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  header a:hover {
+    color: black;
+  }
+  
+  header a {
+    margin-right: 10px;
+  }
+  
+  /* Section styles */
+  section {
+    position: relative;
+    width: 1100px;
+    height: 100px;
+    left: 450px;
+    top: 10px;
+  }
+  
+  section .profile {
+    background-color: rgb(168, 168, 168);
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+    left: -300px;
+    top: 30px;
+    z-index: 1;
+  }
+  
+  #profilePic {
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+   /* Certificate Functions */
+
+   .certificates {
+    background-color: rgb(241, 230, 230);
+    width: 210px;
+    height: 260px;
+    position: relative;
+    border-radius: 5%;
+    border: 5px solid white;
+    left: 70px;
+    top: 740px;
+    z-index: 2;
+  }
+
+  .cert {
+    background-color: rgb(168, 168, 168);
+    width: 1455px;
+    height: 580px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -60px;
+    left: -350px;
+  }
+  
+  .cert img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .cert .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cert .image-container input[type="file"] {
+    display: none;
+  }
+  
+  .cert .image-container label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .cert_name {
+    background-color: #ffe2cc;
+    height: 50px;
+    width: 290px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 40px;
+    left: 300px;
+  }
+
+  .cert_block {
+    background-color: #ffe2cc;
+    height: 50px;
+    width: 290px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 1px;
+    left: 360px;
+  }
+
+  .cert_id {
+    background-color: #ffe2cc;
+    height: 50px;
+    width: 290px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 1px;
+    left: 360px;
+  }
+  
+  /* Calendar styles */
+  .calendar {
+    width: 100%; /* Adjust width to fit the container */
+    max-width: 450px; /* Set maximum width to maintain calendar size */
+    height: auto; /* Allow height to adjust based on content */
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 20px;
+    box-shadow: 5px 5px #9b9b9b;
+    overflow: hidden; /* Hide any overflow content */
+    padding-bottom: 20px;
+    top: -30px;
+    left: 550px;
+    position: relative;
+  }
+  
+  /* Calendar table styles */
+  .calendar table {
+    width: 100%; /* Ensure table fills the container */
+    border-collapse: collapse;
+    position: relative;
+    margin-bottom: 20px;
+    top: 30px;
+    left: 0px;
+  }
+  
+  /* Calendar cell styles */
+  .calendar th,
+  .calendar td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+  }
+  
+  /* Header row styles */
+  .calendar th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Today cell styles */
+  .calendar .today {
+    background-color: #99c9ff;
+  }
+
+  .calendar, .calendarBody {
+   padding: 50px;
+  }
+
+  .nextMonth {
+    top: 27px;
+    left: 460px;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    max-width: 60px;
+    border-radius: 50px;
+    border-color: #FF7001;
+  }
+
+  .prevMonth {
+    top: 25px;
+    left: 30px;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    max-width: 60px;
+    border-radius: 50px;
+    border-color: #FF7001;
+  }
+
+  /* Info Functions */
+
+  .info {
+    background-color: rgb(168, 168, 168);
+    width: 860px;
+    height: 1290px;
+    top: 815px;
+    left: 360px;
+    position: absolute;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+  }
+
+  .info_pic {
+    background-color: rgb(241, 230, 230);
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+    left: 60px;
+    top: 55px;
+    z-index: 1;
+  }
+
+  .add-icon {
+    color: #FF7001;
+    position: absolute;
+    left: -755px;
+    top: 210px;
+    z-index: 5;
+  }
+
+  #fileInput {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  /* About Functions */
+
+  .about {
+    background-color: rgb(168, 168, 168);
+    width: 560px;
+    height: 850px;
+    top: 1255px;
+    left: 1265px;
+    position: absolute;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    background-color: white;
+    top: 2150px;
+    left: 500px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 0;
+  }
